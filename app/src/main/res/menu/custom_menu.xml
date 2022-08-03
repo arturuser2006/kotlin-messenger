@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/start_chat"
+        android:title=""
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/stat_notify_chat"></item>
+
+    <item
+        android:id="@+id/sign_out"
+        app:showAsAction="ifRoom"
+        android:title=""
+        android:icon="@drawable/door"></item>
+</menu>

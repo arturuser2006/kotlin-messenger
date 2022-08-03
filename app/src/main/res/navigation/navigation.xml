@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.testkotlinapplication.registration.FirstFragment"
+        android:label="FirstFragment" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_messagesFragment"
+            app:destination="@id/messagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.testkotlinapplication.registration.SecondFragment"
+        android:label="SecondFragment" >
+        <action
+            android:id="@+id/action_secondFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_messagesFragment"
+            app:destination="@id/messagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messagesFragment"
+        android:name="com.example.testkotlinapplication.messages.MessagesFragment"
+        android:label="MessagesFragment" >
+        <action
+            android:id="@+id/action_messagesFragment_to_firstFragment2"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_messagesFragment_to_selectUserFragment"
+            app:destination="@id/selectUserFragment" />
+        <action
+            android:id="@+id/action_messagesFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectUserFragment"
+        android:name="com.example.testkotlinapplication.messages.SelectUserFragment"
+        android:label="SelectUserFragment" >
+        <action
+            android:id="@+id/action_selectUserFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_selectUserFragment_to_messagesFragment"
+            app:destination="@id/messagesFragment" />
+        <action
+            android:id="@+id/action_selectUserFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.testkotlinapplication.messages.ChatFragment"
+        android:label="ChatFragment" >
+        <action
+            android:id="@+id/action_chatFragment_to_selectUserFragment"
+            app:destination="@id/selectUserFragment" />
+        <action
+            android:id="@+id/action_chatFragment_to_messagesFragment"
+            app:destination="@id/messagesFragment" />
+    </fragment>
+</navigation>
